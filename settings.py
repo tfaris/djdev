@@ -111,6 +111,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'modelwork',
+	'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -120,6 +121,7 @@ INSTALLED_APPS = (
 	'guardian',
 )
 AUTHENTICATION_BACKENDS = (
+	'django.contrib.auth.backends.ModelBackend',
 	'guardian.backends.ObjectPermissionBackend',
  )
 
